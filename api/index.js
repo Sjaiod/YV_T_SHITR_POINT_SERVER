@@ -4,7 +4,7 @@ const mongoose= require('mongoose')
 const { model } = require('mongoose')
 const store_id = process.env.STORE_ID
 const store_passwd =  process.env.STORE_PASSWORD
-const is_live = false //true for live, false for sandbox
+const is_live = process.env.is_live //true for live, false for sandbox
 const uid=new mongoose.Types.ObjectId().toString()
 const createPayment=async (req, res) => {
     const {
