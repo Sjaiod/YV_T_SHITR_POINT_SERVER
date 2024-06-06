@@ -24,9 +24,9 @@ const createPayment=async (req, res) => {
             total_amount: TOTAL_PRICE,
             currency: 'BDT',
             tran_id: uid, // unique transaction ID
-            success_url: `http://localhost:5000/api/success/${uid}`,
-            fail_url: `http://localhost:5000/api/fail/${uid}`,
-            cancel_url: 'http://localhost:3030/cancel',
+            success_url: `https://yv-t-shitr-point-server.onrender.com/api/success${uid}`,
+            fail_url: `https://yv-t-shitr-point-server.onrender.com/api/fail/${uid}`,
+            cancel_url: `https://yv-t-shitr-point-server.onrender.com/cancel/${uid}`,
             ipn_url: 'http://localhost:3030/ipn',
             shipping_method: 'Courier',
             product_name: 'Computer',
