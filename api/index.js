@@ -101,7 +101,7 @@ const handleSuccess = async (req, res) => {
             }}
         )
         if(result.modifiedCount ==1){
-            res.redirect(`http://localhost:3000/success/${tid}`)
+            res.redirect(`https://yv-t-shirt-point.netlify.app/success/${tid}`)
         }
        
         }
@@ -117,7 +117,7 @@ const fail=async(req,res)=>{
     try {
         const result=await Purchase.deleteOne({tid:tid})
         if(result.deletedCount=true){
-            res.redirect(`http://localhost:3000/fail/${tid}`)
+            res.redirect(`https://yv-t-shirt-point.netlify.app/fail/${tid}`)
         }
         
     } catch (error) {
