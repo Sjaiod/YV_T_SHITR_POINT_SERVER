@@ -10,7 +10,7 @@ const router = require("./routes/router")
 
 app.use(express.json())
 app.use(cors({
-  origin: 'https://yv-t-shirt-point.netlify.app/', // Allow requests from this origin
+  origin: 'https://yv-t-shirt-point.netlify.app', // Allow requests from this origin
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Allow these HTTP methods
   credentials: true // Allow credentials
 }))
